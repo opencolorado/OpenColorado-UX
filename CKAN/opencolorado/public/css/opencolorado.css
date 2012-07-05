@@ -338,3 +338,46 @@ legend
     border-color: #CCCCCC;
     color: #000000;
 }
+
+/* footer */
+footer #copyright {
+    background: none repeat scroll 0 0 #333333;
+    float: left;
+    margin-top: 30px;
+    padding: 15px 0 20px;
+    width: 100%;
+}
+
+footer #copyright .wrap {
+    margin: 0 auto;
+    width: 960px;
+}
+
+footer #copyright span {
+    color: #B7B9B3;
+    font-size: 12px;
+}
+
+footer #copyright a {
+    font-size: 13px;
+}
+
+footer #copyright span a {
+    color: #718293;
+    text-decoration: none;
+}
+
+footer #copyright span a:hover {
+    color: #8596A6;
+    text-decoration: none;
+}
+
+.alignleft {
+    float: left;
+    width: auto;
+}
+
+.alignright {
+    float: right;
+    width: auto;
+}
