@@ -1,0 +1,1193 @@
+/* fonts */
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+
+/* overrides */
+/*.nivoSlider
+{
+   top: 10px !important; 
+}*/
+
+#nivo_slider_bg
+{
+    height: 375px !important;
+    background: none repeat scroll 0 0 #F0F0F0 !important;
+    border-bottom: 2px solid #E1E1E1 !important;
+    border-top: 2px solid #EBEBEB !important;
+    margin-bottom: 20px !important;
+    padding: 30px 0 31px !important;
+}
+
+#nivo_container-wrapper
+{
+    margin: 0 auto;
+    width: 960px;
+    position: relative;
+}
+
+
+/*#nivo_container
+{
+    height: auto !important;
+    width: 100% !important;
+    margin: inherit !important;
+}
+*/
+
+
+.wp-pagenavi a
+{
+    text-transform: none !important;
+}
+
+/* body */
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0;
+    min-width: 990px;
+}
+
+body#outer_page
+{
+    background: url(opencolorado/body_bg.gif) repeat-x;
+    color: #858b7e;
+}
+
+body#inner_page
+{
+    background: url(opencolorado/body_bg.gif) repeat-x;
+    color: #858b7e;
+}
+
+/*body shadow*/
+.body_bg_shadow
+{
+    background: url(opencolorado/body_bg_shadow.gif) no-repeat center bottom;
+    border: 1px solid red;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+a
+{
+    color: #008EE8;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #ec8526;
+    text-decoration: underline;
+}
+
+/* page */
+body#outer_page #page
+{
+    float: left;
+    width: 100%;
+}
+body#inner_page #page
+{
+    float: left;
+    width: 100%;
+}
+
+/* wrap */
+.wrap
+{
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* logo */
+#logo
+{
+    text-indent: -999999px;
+    width: 275px;
+    float: left;
+    margin-top: 16px;
+}
+#logo a
+{
+    background: url(opencolorado/logo.png) no-repeat;
+    width: 275px;
+    height: 37px;
+    display: block;
+}
+
+/* main_nav */
+#main_nav
+{
+    float: right;
+    padding: 0;
+    margin: 67px 12px 0 0;
+}
+#main_nav li
+{
+    display: inline;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+#main_nav li a
+{
+    text-transform: uppercase;
+    padding: 2px 12px;
+    display: block;
+    float: left;
+    color: #484848;
+    text-decoration: none;
+}
+#main_nav li a:hover, #main_nav li a.current
+{
+    color: #008EE8;
+}
+
+/* search */
+#search
+{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-top: 64px;
+}
+#search p
+{
+    background: url(opencolorado/s_bg.gif) no-repeat;
+    height: 18px;
+    width: 167px;
+}
+#search #s
+{
+    background: none;
+    position: relative;
+    border: 0;
+    padding: 6px 36px 4px 6px;
+    width: 125px;
+    color: #464646;
+}
+* html #search #s
+{
+    width: 94px;
+}
+
+/* rss */
+.rss
+{
+    width: 46px;
+    height: 16px;
+    text-indent: -999999px;
+    float: right;
+    margin-top: 6px;
+}
+.rss a
+{
+    background: url(opencolorado/icon_rss.gif) no-repeat;
+    display: block;
+    width: 46px;
+    height: 16px;
+}
+
+/* main_content */
+#main_content
+{
+    position: relative;
+    clear: both;
+}
+
+/* cu3er-container */
+.cu3er_bg
+{
+    clear: both;
+    background: url(opencolorado/body_bg_shadow_2.gif) no-repeat bottom center;
+    width: 100%;
+    text-align: center;
+    height: 420px;
+    margin-bottom: 60px;
+}
+#cu3er_container
+{
+    width: 960px;
+    margin: 0 auto;
+    height: 371px;
+    outline: 0;
+}
+
+/* columns */
+body#outer_page .columns
+{
+    width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+
+.columns p
+{
+    font-size: 14px;
+}
+
+
+
+.columns h2
+{
+    font-size: 18px;
+    line-height: 35px;
+}
+.columns h3, #content .columns h3
+{
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.columns > div
+{
+    width: 320px;
+    float: left;
+}
+
+.columns .first
+{
+    float: left;
+    padding-left: 0;
+    position: relative;
+}
+
+.columns .no_padding
+{
+    padding-left: 55px;
+    position: relative;
+}
+
+.columns .excerpt
+{
+    float: right;
+    width: 240px;
+}
+.columns img
+{
+    float: left;
+    left: 10px;
+    position: absolute;
+    top: 0;
+}
+
+.columns .price
+{
+    font-size: 18px;
+    color: green;
+}
+
+/* img_bg 300 of width */
+.columns .img_bg, .img_bg
+{
+    background: url(opencolorado/img300_bg.gif) repeat-y;
+    float: left;
+    width: 300px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+.columns .img_bg .top, .img_bg .top
+{
+    background: url(opencolorado/img300_bg_top.gif) no-repeat top left;
+    width: 300px;
+    float: left;
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+.columns .img_bg .top .bottom, .img_bg .top .bottom
+{
+    background: url(opencolorado/img300_bg_bottom.gif) no-repeat bottom left;
+    width: 300px;
+    float: left;
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+.columns .img_bg .top .bottom a img, .img_bg .top .bottom a img, .img_bg .top .bottom img
+{
+    padding: 8px 0;
+    float: left;
+    margin: 0 0 0 8px;
+    position: relative;
+}
+.columns .img_bg .top .bottom a span
+{
+    width: 29px;
+    height: 19px;
+    background: url(opencolorado/icon_preview.gif) no-repeat left center;
+    display: none;
+}
+.columns .img_bg .top .bottom a:hover span
+{
+    display: block;
+    position: absolute;
+    z-index: 99999;
+    margin: 8px 0 0 273px;
+    text-decoration: underline;
+    color: #fff;
+}
+*:first-child + html .columns .img_bg .top .bottom a:hover span
+{
+    margin: 8px 0 0 -20px;
+}
+
+/* img_bg 650 of width */
+.img650_bg
+{
+    background: url(opencolorado/img650_bg.gif) repeat-y;
+    float: left;
+    width: 650px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+.img650_bg .top
+{
+    background: url(opencolorado/img650_bg_top.gif) no-repeat top left;
+    width: 650px;
+    float: left;
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+.img650_bg .top .bottom
+{
+    background: url(opencolorado/img650_bg_bottom.gif) no-repeat bottom left;
+    width: 650px;
+    float: left;
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+.img650_bg .top .bottom a img, .img650_bg .top .bottom img
+{
+    padding: 9px 0;
+    float: left;
+    margin: 0 0 0 9px;
+    position: relative;
+}
+
+
+/* work */
+#main_content #content .work h3
+{
+    padding-left: 10px;
+    padding-bottom: 0;
+}
+#main_content #content .work p
+{
+    padding-left: 10px;
+}
+
+/* news_thicker */
+#news_thicker
+{
+    float: left;
+    background: url(opencolorado/news_thicker_bg.gif) repeat-x;
+    width: 100%;
+}
+#news_thicker .l
+{
+    float: left;
+    background: url(opencolorado/news_thicker_bgLeft.gif) no-repeat left 0;
+    width: 100%;
+}
+#news_thicker .l .r
+{
+    float: left;
+    background: url(opencolorado/news_thicker_bgRight.gif) no-repeat right 0;
+    width: 100%;
+}
+#news_thicker .news_content
+{
+    padding: 12px 20px;
+}
+#news_thicker .news_content .title
+{
+    font-size: 14px;
+    color: #5f605c;
+    text-transform: uppercase;
+    font-weight: bold;
+    float: left;
+}
+#news_thicker #news
+{
+    float: left;
+    width: 70%;
+    padding-bottom: 40px;
+}
+#news_thicker #news li
+{
+    list-style: none;
+    display: none;
+}
+#news_thicker #news li a
+{
+    color: #989996;
+}
+
+/*blockquote*/
+blockquote
+{
+    padding-bottom: 20px;
+    background: url(opencolorado/double_quote.gif) no-repeat left top;
+}
+blockquote .quote
+{
+    font-style: italic;
+    color: #8a8a8a;
+    text-indent: 40px;
+}
+
+/* more */
+.more
+{
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.more:hover
+{
+}
+
+/* recent_blog */
+#recent_blog
+{
+    padding: 0;
+    margin: 0 0 0px 0;
+    float: left;
+}
+#recent_blog li
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    line-height: 20px;
+    clear: both;
+}
+#recent_blog li .thumb
+{
+    float: left;
+    width: 40px;
+    padding: 4px;
+    background: #e0e3dc;
+}
+#recent_blog li .thumb:hover
+{
+    background: #d6d9d0;
+}
+#recent_blog li .thumb img
+{
+    float: left;
+}
+#recent_blog li .blog_excerpt
+{
+    float: right;
+    padding-left: 11px;
+    width: 230px;
+}
+#recent_blog h3
+{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+#recent_blog .author
+{
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+/* content */
+#content
+{
+    width: 650px;
+    float: right;
+    padding-bottom: 20px;
+}
+#content h2
+{
+    clear: both;
+}
+#content h3
+{
+    clear: both;
+}
+#content h4
+{
+    line-height: 20px;
+    clear: both;
+}
+#content .columns
+{
+    width: 650px;
+    clear: both;
+    padding-top: 20px;
+}
+
+#main_content .wide_content
+{
+    width: 100%;
+}
+
+/* sidebar */
+#sidebar
+{
+    width: 268px;
+    float: left;
+    margin-top: 40px;
+}
+#sidebar .sidebox
+{
+    width: 264px;
+    float: left;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px 5px 5px 5px;
+}
+#sidebar .sidebox .t
+{
+    width: 264px;
+    float: left;
+}
+#sidebar .sidebox .b
+{
+    width: 264px;
+    float: left;
+}
+#sidebar .sidebox .b .content
+{
+    width: 220px;
+    float: left;
+    padding: 15px;
+}
+#sidebar .sidebox .b .content h2
+{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    line-height: 16px;
+    color: #474646;
+    background: url(opencolorado/line_horizontal.gif) repeat-x bottom;
+}
+#sidebar .sidebox .b .content h2.margin_bottom
+{
+    margin-bottom: 20px;
+}
+#sidebar .sidebox .b .content h3
+{
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #474646;
+}
+#sidebar .sidebox .b .content p
+{
+    padding-bottom: 20px;
+}
+
+/* sidelink */
+#sidebar .sidelink
+{
+    padding: 0 0 20px 0;
+    margin: 0;
+    float: left;
+    width: 100%;
+}
+#sidebar .sidelink li
+{
+    padding: 0;
+    margin: 0;
+    display: block;
+    list-style: none;
+    line-height: 18px;
+}
+#sidebar .sidelink li a
+{
+    display: block;
+    padding: 10px 0 10px 10px;
+    width: 95%;
+    color: #575757;
+    background: url(opencolorado/line_horizontal.gif) bottom repeat-x;
+}
+#sidebar .sidelink li a:hover, #sidebar .sidelink li a.current
+{
+    text-decoration: none;
+    padding-left: 10px;
+    width: 95%;
+    color: #282828;
+    background: #fbfcf9 url(opencolorado/line_horizontal.gif) bottom repeat-x;
+}
+#sidebar .sidelink li a.current
+{
+    font-weight: bold;
+}
+
+/* image_gallery */
+#sidebar .image_galery
+{
+    margin: 0;
+    padding: 0 0 20px 0;
+    float: left;
+    position: relative;
+}
+#sidebar .image_galery li
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline;
+}
+#sidebar .image_galery li a
+{
+    padding: 4px;
+    float: left;
+    display: block;
+    background: #e8e9e5;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+#sidebar .image_galery li a:hover
+{
+    background: #fdfdfd;
+}
+#sidebar .image_galery li a img
+{
+    float: left;
+}
+#sidebar .image_galery li a small
+{
+    text-align: center;
+    width: 140px;
+    background: url(opencolorado/pop_arrow.gif) no-repeat center bottom;
+    padding: 5px 5px 16px;
+    display: none;
+    color: #fff;
+    font-size: 11px;
+    text-indent: 0;
+}
+#sidebar .image_galery li a:hover small
+{
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    margin: -40px 0 0 -46px;
+}
+
+*:first-child + html #sidebar .image_galery li a:hover small
+{
+    margin: -40px 0 0 -107px;
+}
+* html #sidebar .image_galery li a:hover small
+{
+    margin: -40px 0 0 -107px;
+}
+
+/* breadcrumbs */
+#breadcrumbs
+{
+    padding: 0;
+    margin: 5px 5px 0 -10px;
+    position: relative;
+    float: left;
+}
+#breadcrumbs li
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline;
+    color: #949494;
+    font-size: 13px;
+    float: left;
+    padding-left: 10px;
+}
+#breadcrumbs li a
+{
+    font-weight: normal;
+    background: url(opencolorado/breadcrumbs_arrow.gif) no-repeat right center;
+    padding-right: 10px;
+}
+
+/*contact-form*/
+#contact-form
+{
+    padding: 0;
+    margin: 0;
+}
+#contact-form label
+{
+    float: left;
+    width: 120px;
+    font-size: 14px;
+}
+#name, #email, #subject, #message
+{
+    border: 1px solid #dddddd;
+    padding: 8px;
+    color: #5e5e5e;
+    font-size: 14px;
+}
+#name:focus, #email:focus, #subject:focus, #message:focus
+{
+    border: 1px solid #acacac;
+    padding: 8px;
+}
+#name, #email, #subject
+{
+    width: 285px;
+}
+#message
+{
+    width: 350px;
+    height: 200px;
+}
+.send_btn
+{
+    border: none;
+    padding: 10px 20px;
+    background: #dfe1dc;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #5d5f59;
+    font-size: 18px;
+    font-weight: normal;
+}
+#main_content #content .errorMsg h3
+{
+    color: red;
+}
+#main_content #content .infoMsg h3
+{
+    color: green;
+}
+
+/* header */
+#header.wrap
+{
+    width: auto;
+    height: 55px;
+    border-bottom: 1px solid #E1E1E1;
+    box-shadow: 0 3px 7px #EFEFEF;
+}
+
+#inner_header
+{
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* footer */
+#footer
+{
+    float: left;
+    width: 100%;
+    padding-top: 30px;
+    border-top: 1px solid #E1E1E1;
+    box-shadow: 0 0px 80px #E1E1E1 inset;
+}
+
+#footer .columns > div
+{
+    padding-left: 55px;
+    width: 260px;
+    position: relative;
+}
+
+#footer .wrap .about .icon_about
+{
+    background: url(opencolorado/document.png) no-repeat;
+    width: 30px;
+    height: 29px;
+    display: block;
+    position: absolute;
+    left: 10px;
+}
+#footer .wrap .twitter .icon_twitter
+{
+    background: url(opencolorado/twitter.png) no-repeat;
+    width: 40px;
+    height: 37px;
+    display: block;
+    float: right;
+    position: absolute;
+    left: 10px;
+}
+
+#footer .flickr_badge
+{
+    background: url(opencolorado/documents.png) no-repeat scroll 10px 0;
+    display: block;
+    position: absolute;
+}
+
+/*twitter_update_list*/
+#twitter_update_list
+{
+    padding: 0;
+    margin: 0;
+}
+#twitter_update_list li
+{
+    margin: 5px 5px 10px 5px;
+    list-style: none;
+    font-size: 12px;
+}
+#twitter_update_list li a
+{
+    display: block;
+}
+#twitter_update_list li span a
+{
+    display: inline;
+}
+
+/*flickr_badge*/
+.columns .flickr_badge
+{
+    width: 300px;
+    float: left;
+    padding-left: 30px;
+    padding-bottom: 0px;
+}
+.columns .flickr_badge div
+{
+    padding-left: 0px;
+    margin: 0 0 0px 0;
+    padding-bottom: 0px;
+    float: left;
+    width: auto;
+}
+.columns .flickr_badge div a
+{
+    background: #dde0da;
+    padding: 4px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+.columns .flickr_badge div a:hover
+{
+    background: #cccfc9;
+    padding: 4px;
+    float: left;
+}
+.columns .flickr_badge div a img
+{
+    width: 75px;
+    height: 75px;
+    float: left;
+}
+
+/*footer*/
+#footer a
+{
+    font-size: 13px;
+}
+
+#footer #copyright
+{
+    float: left;
+    width: 100%;
+    padding: 15px 0 20px;
+    background: #333333;
+    margin-top: 30px;
+}
+#footer #copyright span
+{
+    font-size: 12px;
+    color: #b7b9b3;
+}
+#footer #copyright span a
+{
+    color: #718293;
+    text-decoration: none;
+}
+#footer #copyright span a:hover
+{
+    color: #8596A6;
+    text-decoration: none;
+}
+
+/* contact_container */
+.contact_container
+{
+    color: #767a71;
+    font-size: 36px;
+    padding: 50px 0;
+    float: left;
+}
+.contact_container strong
+{
+    color: #2b2d28;
+    font-family: Georgia, "Times New Roman" , Times, serif;
+    font-style: italic;
+}
+.contact_container .contact_us
+{
+    width: 286px;
+    height: 61px;
+    text-indent: -99999px;
+    float: right;
+    margin-top: -12px;
+}
+.contact_container .contact_text
+{
+    padding: 10px 0;
+    float: left;
+}
+.contact_container .contact_us a
+{
+    width: 286px;
+    height: 61px;
+    background: url(opencolorado/button_contactus.gif) no-repeat;
+    display: block;
+}
+.contact_us a:hover
+{
+    background-position: 0 100%;
+}
+
+/* blog */
+#blog .entry
+{
+    float: left;
+    width: 100%;
+    padding-bottom: 0px;
+    margin-top: 10px;
+}
+
+#blog .entry h2
+{
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+#blog .entry h3 
+{
+    font-size: 16px; 
+    line-height: 24px;
+}
+
+#blog .entry .excerpt
+{
+    float: right;
+    width: 320px;
+}
+
+#blog .entry .excerpt h3
+{
+    float: right;
+    padding-bottom: 4px;
+}
+
+#blog .entry .excerpt p
+{
+    font-style: italic;
+}
+
+#blog .meta
+{
+    color: #8a8a8a;
+    font-size: 13px;
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+/*=common styles*/
+.clearfix
+{
+    clear: both;
+}
+
+ul, ol, dl {
+    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+p
+{
+    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, p, pre, ol, ul, dl
+{
+    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1
+{
+    line-height: 35px;
+    font-size: 18px;
+}
+
+h2 
+{
+    line-height: 35px;
+    font-size: 22px;
+}
+
+h3
+{
+    line-height: 35px;
+    font-size: 18px;
+}
+
+
+
+li
+{
+    color: #555555;
+    list-style: outside;
+    margin-left: 20px;
+}
+ul.styledlist
+{
+    clear: both;
+    margin: 0;
+    padding: 0 0 20px 0;
+    color: #585858;
+}
+ul.styledlist li
+{
+    background: url(opencolorado/arrow.gif) no-repeat left 0.3em;
+    padding-left: 25px;
+    list-style: none;
+    margin-left: 0px;
+    line-height: 22px;
+}
+ul.checkedlist
+{
+    clear: both;
+    margin: 0;
+    padding: 0 0 20px 0;
+    color: #585858;
+}
+ul.checkedlist li
+{
+    background: url(opencolorado/check.gif) no-repeat left 0.3em;
+    padding-left: 25px;
+    list-style: none;
+    margin-left: 0px;
+    line-height: 22px;
+}
+ol li
+{
+    list-style: decimal;
+    margin-left: 20px;
+}
+dl dt
+{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+dl dd
+{
+    padding-bottom: 10px;
+    margin-left: 0px;
+}
+strong
+{
+    font-weight: bold;
+}
+em, code
+{
+    font-style: italic;
+}
+ul, ul li
+{
+    list-style-type: disc;
+}
+ol, ol li
+{
+    list-style-type: decimal;
+}
+table
+{
+    margin-bottom: 1.4em;
+    width: 100%;
+}
+th
+{
+    font-weight: bold;
+}
+th, td, caption
+{
+    padding: 4px 10px 4px 5px;
+}
+tfoot
+{
+    font-style: italic;
+}
+sup, sub
+{
+    line-height: 0;
+}
+abbr, acronym
+{
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+address
+{
+    margin: 0 0 1.5em;
+    font-style: italic;
+}
+del
+{
+    text-decoration: line-through;
+}
+pre
+{
+    white-space: pre;
+}
+img.centered, .aligncenter
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.border
+{
+    border: 1px solid #c8c9be;
+    padding: 2px;
+}
+img.alignright
+{
+    display: inline;
+    margin: 0 0 12px 12px;
+    float: right;
+}
+img.alignleft
+{
+    display: inline;
+    margin: 0 12px 12px 0px;
+    float: left;
+}
+.alignright
+{
+    float: right;
+    width: auto;
+}
+.alignleft
+{
+    float: left;
+    width: auto;
+}

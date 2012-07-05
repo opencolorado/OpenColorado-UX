@@ -1,0 +1,318 @@
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu *
+{
+    margin: 0 0 0px 0;
+    padding: 0;
+    list-style: none;
+    z-index: 500;
+}
+
+
+.sf-menu
+{
+    line-height: 1.0;
+}
+.sf-menu ul
+{
+    position: absolute;
+    top: -999em;
+    width: 18em; /* left offset of submenus need to match (see below) */
+}
+
+.sf-menu ul li
+{
+    width: 100%;
+}
+
+.sf-menu li:hover
+{
+    visibility: inherit; /* fixes IE7 'sticky bug' */
+}
+
+.sf-menu li
+{
+    float: left;
+    position: relative;
+    margin: 0 2px;
+}
+
+.sf-menu li.current-menu-item a
+{
+    color: #fff;
+}
+
+.sf-menu li.current-menu-item
+{
+    background: #4ea0e8; /* Old browsers */
+    background: -moz-linear-gradient(top,  #4ea0e8 0%, #388bea 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4ea0e8), color-stop(100%,#388bea)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #4ea0e8 0%,#388bea 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #4ea0e8 0%,#388bea 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #4ea0e8 0%,#388bea 100%); /* IE10+ */
+    background: linear-gradient(top,  #4ea0e8 0%,#388bea 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ea0e8', endColorstr='#388bea',GradientType=0 ); /* IE6-9 */
+
+
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.sf-menu li.current-menu-item:hover
+{
+    background: #4792d3; /* Old browsers */
+    background: -moz-linear-gradient(top,  #4792d3 0%, #2c85ea 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4792d3), color-stop(100%,#2c85ea)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #4792d3 0%,#2c85ea 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #4792d3 0%,#2c85ea 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #4792d3 0%,#2c85ea 100%); /* IE10+ */
+    background: linear-gradient(top,  #4792d3 0%,#2c85ea 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4792d3', endColorstr='#2c85ea',GradientType=0 ); /* IE6-9 */
+
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.sf-menu li.button-secondary
+{
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #eaeaea 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eaeaea)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* IE10+ */
+background: linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
+
+
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.sf-menu li.button-secondary:hover
+{
+    background: #4792d3; /* Old browsers */
+    background: -moz-linear-gradient(top,  #4792d3 0%, #2c85ea 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4792d3), color-stop(100%,#2c85ea)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #4792d3 0%,#2c85ea 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #4792d3 0%,#2c85ea 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #4792d3 0%,#2c85ea 100%); /* IE10+ */
+    background: linear-gradient(top,  #4792d3 0%,#2c85ea 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4792d3', endColorstr='#2c85ea',GradientType=0 ); /* IE6-9 */
+
+
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.sf-menu li.button-secondary a:visited
+{
+    color: #484848;
+}
+
+.sf-menu li.button-secondary a:hover, .sf-menu li.button-secondary a:active
+{
+   color: #fff;
+}
+
+
+
+
+.sf-menu a
+{
+    display: block;
+    position: relative;
+}
+.sf-menu li:hover ul, .sf-menu li.sfHover ul
+{
+    left: 0;
+    top: 2em; /* match top ul list item height */
+    z-index: 99;
+}
+ul.sf-menu li:hover li ul, ul.sf-menu li.sfHover li ul
+{
+    top: -999em;
+}
+ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul
+{
+    left: 18em; /* match ul width */
+    top: 0;
+}
+ul.sf-menu li li:hover li ul, ul.sf-menu li li.sfHover li ul
+{
+    top: -999em;
+}
+ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul
+{
+    left: 18em; /* match ul width */
+    top: 0;
+}
+
+
+/*** DEMO SKIN ***/
+.sf-menu, .sf-menu
+{
+    float: right;
+    margin: 14px 0 0 4px;
+}
+.sf-menu a
+{
+    padding: .5em 0.7em;
+    display: block;
+    float: left;
+    color: #484848;
+    text-decoration: none;
+}
+.sf-menu a:hover
+{
+    color: #999999;
+}
+.sf-menu a, .sf-menu a:visited
+{
+    /* visited pseudo selector so IE6 applies text colour*/
+    color: #484848;
+}
+.sf-menu li
+{
+    background: none;
+}
+.sf-menu li ul
+{
+    border-top: #eaeaea 2px solid;
+}
+.sf-menu li li
+{
+    background: #efefef;
+    line-height: 1.3;
+}
+.sf-menu li li a
+{
+    font-weight: normal;
+    padding: .95em 1em;
+    text-transform: none;
+    float: left;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #f6f6f6;
+    width: 16em;
+}
+.sf-menu li li li
+{
+    background: #efefef;
+}
+.sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active, .sf-menu a.current
+{
+    outline: 0;
+    color: #999999;
+}
+
+.sf-menu li:hover .rightshadow, .sf-menu li.sfHover .rightshadow, .sf-menu a:focus .rightshadow, .sf-menu a:hover .rightshadow, .sf-menu a:active .rightshadow, .sf-menu a.current .rightshadow
+{
+    background: url(../images/shadow_right.png) no-repeat right 0;
+    display: block;
+    width: 8px;
+    height: 72px;
+    right: -7px;
+    top: -2px;
+    position: absolute;
+    z-index: 2;
+}
+.sf-menu li li:hover, .sf-menu li li.sfHover, .sf-menu li li a:focus, .sf-menu li li a:hover, .sf-menu li li a:active
+{
+    /*background:		#d8d8d8; 	outline:		0;*/
+}
+
+
+/*** arrows **/
+.sf-menu a.sf-with-ul
+{
+    padding-right: 1.85em;
+    min-width: 1px; /* trigger IE7 hasLayout so spans position accurately */
+}
+.sf-sub-indicator
+{
+    position: absolute;
+    display: block;
+    right: .75em;
+    top: 1.05em; /* IE6 only */
+    width: 10px;
+    height: 10px;
+    text-indent: -999em;
+    overflow: hidden;
+    background: url('../images/arrows-cccccc.png') no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+}
+
+
+.sf-menu li a .sf-sub-indicator
+{
+    top: 2.9em; /* IE6 only */
+    right: .75em;
+}
+.sf-menu li li a .sf-sub-indicator
+{
+    top: 1.05em; /* IE6 only */
+    right: .75em;
+}
+.sf-menu li a > .sf-sub-indicator
+{
+    /* give all except IE6 the correct values */
+    top: 2.9em;
+    right: .75em;
+}
+
+.sf-menu li li a > .sf-sub-indicator
+{
+    /* give all except IE6 the correct values */
+    top: 1em;
+}
+
+/* apply hovers to modern browsers */
+a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-indicator, li:hover > a > .sf-sub-indicator, li.sfHover > a > .sf-sub-indicator
+{
+    background-position: -10px -100px; /* arrow hovers for modern browsers*/
+}
+
+/* point right for anchors in subs */
+.sf-menu ul .sf-sub-indicator
+{
+    background-position: -10px 0;
+}
+.sf-menu ul a > .sf-sub-indicator
+{
+    background-position: 0 0;
+}
+/* apply hovers to modern browsers */
+.sf-menu ul a:focus > .sf-sub-indicator, .sf-menu ul a:hover > .sf-sub-indicator, .sf-menu ul a:active > .sf-sub-indicator, .sf-menu ul li:hover > a > .sf-sub-indicator, .sf-menu ul li.sfHover > a > .sf-sub-indicator
+{
+    background-position: -10px 0; /* arrow hovers for modern browsers*/
+}
+
+/*** shadows for all but IE6 ***/
+.sf-shadow ul
+{
+    background: url('../images/shadow.png') no-repeat bottom right;
+    padding: 0 8px 9px 0;
+    -moz-border-radius-bottomleft: 17px;
+    -moz-border-radius-topright: 17px;
+    -webkit-border-top-right-radius: 17px;
+    -webkit-border-bottom-left-radius: 17px;
+    z-index: 999;
+}
+.sf-shadow ul.sf-shadow-off
+{
+    background: transparent;
+}

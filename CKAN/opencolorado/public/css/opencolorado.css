@@ -1,6 +1,11 @@
 /* Fonts */
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
 
+h1, h2, h3, h4, h5
+{
+    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 /* page */
 body
 {
@@ -13,7 +18,7 @@ body
 
 body #content
 {
-    padding-top: 20px;   
+    padding-top: 5px;   
 }
 
 .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
@@ -21,15 +26,39 @@ body #content
 }
 
 /* header */
+#main-menu
+{
+    font-size: 14px;
+}
+
 .header
 {
-    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;   
+    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+header .inner
+{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+header
+{
+    border-bottom: 1px solid #E1E1E1;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    height: 55px;
+    padding: 0;
+    background: #fff;
 }
 
 header #logo {
     float: left;
     width: 275px;
     margin-top: 1px;
+    padding-top: 5px;
 }
 
 header #site-name {
@@ -43,50 +72,104 @@ header #site-name {
 
 .header.outer
 {
-    border-bottom: 1px solid #E1E1E1;
-    box-shadow: 0 3px 7px #EFEFEF;
-    height: 55px;
     width: auto;
-    background: #fff;
+    background: #D5E5F2;
+    border-bottom: 2px solid #E1E1E1 !important;
     margin-bottom: 0px;
     position: relative;
+    height: 90px;
+    width: auto;
+    box-shadow: none;
+    margin-bottom: 10px;   
 }
 
 .header .account {
-    float: right;
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 0;
+    z-index: 1;
+}
+
+header .menu
+{
+    display: block;
+    height: 35px;
+    position: absolute;
+    position: relative;
+    top: 56px;
 }
 
 header .menu #mainmenu {
-    display: inline;
+    display: block;
     position: absolute;
-    right: 150px;
-    top: 10px;
 }
 
 header .menu a 
 {
-    color: #555555;
+    color: #1D83C6;
     display: inline-block;
-    font-size: 14px;
     font-weight: normal;
-    margin-left: 1.5em;
-    padding-top: 9px;
+    font-size: 13px;
+    padding: 2px 5px;
     text-decoration: none;
     text-shadow: none;
+    margin: 5px 6px;
+}
+
+header .menu a:hover
+{
+    color: #3D6A8C
+}
+
+header .menu.account a 
+{ 
+    color: #ffffff;
+    padding: 1px 9px 3px 24px;
+
+    box-shadow: 0 -20px 20px -8px rgba(0, 0, 0, 0.05) inset;
+    
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    background: url("../img/lock_w.png") no-repeat scroll 4px 4px #66CC44;
+
+}
+
+header .menu.account a:hover
+{
+    box-shadow: 0 -20px 20px -10px rgba(255, 255, 255, 0.2) inset;
+}
+
+header .menu.account .ckan-logged-in a
+{
+    background: url("../img/unlock_w.png") no-repeat scroll 4px 4px #D34141;
+}
+
+header .menu.account .ckan-logged-out a:last-child
+{
+    display: none;
+}
+
+header .menu.account .ckan-logged-in a:first-child
+{
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: #1D83C6;
+}
+
+header .menu.account .ckan-logged-in a:first-child:hover
+{
+    color: #3D6A8C;
 }
 
 header .menu #menusearch {
-    float: none;
+    display: none;
 }
 
 header .menu input {
-    background: url("img/search_16.png") no-repeat scroll 4px 6px transparent;
+    background: url("../img/search_16.png") no-repeat scroll 4px 6px #fff;
     height: 22px;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 3px;
     padding: 2px 5px 2px 25px;
     width: 140px;
 }
@@ -164,15 +247,15 @@ body.index.home .front-page .action-box-inner input
 }
 
 body.index.home .front-page .action-box-inner.find {
-    background: url("img/gears.png") no-repeat scroll 0px 10px transparent;
+    background: url("../img/gears.png") no-repeat scroll 0px 10px transparent;
 }
 
 body.index.home .front-page .action-box-inner.share {
-    background: url("img/gears.png") no-repeat scroll 0px 10px transparent;
+    background: url("../img/gears.png") no-repeat scroll 0px 10px transparent;
 }
 
 body.index.home .front-page .action-box-inner.collaborate {
-    background: url("img/gears.png") no-repeat scroll 0px 10px transparent;
+    background: url("../img/gears.png") no-repeat scroll 0px 10px transparent;
 }
 
 body.index.home .front-page .action-box-inner .create-button
@@ -201,7 +284,7 @@ body.index.home .front-page .action-box-inner .create-button
 
 body.index.home .front-page .action-box-inner .create-button:hover
 {
-   background: #4792d3; /* Old browsers */
+    background: #4792d3; /* Old browsers */
     background: -moz-linear-gradient(top,  #4792d3 0%, #2c85ea 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4792d3), color-stop(100%,#2c85ea)); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top,  #4792d3 0%,#2c85ea 100%); /* Chrome10+,Safari5.1+ */
@@ -236,4 +319,22 @@ legend
     line-height: 30px;
     color: #333333;
     font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* Sidebar */
+#sidebar .widget-list li.widget-container.boxed
+{
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+/* alerts */
+.alert-info
+{
+    background-color: #EEEEEE;
+    border-color: #CCCCCC;
+    color: #000000;
 }

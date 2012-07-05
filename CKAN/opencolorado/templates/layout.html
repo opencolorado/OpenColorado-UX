@@ -5,7 +5,21 @@
   py:strip="">
    <head py:match="head">
     ${select('*')}
-    <link rel="stylesheet" href="${h.url_for('/css/opencolorado.css')}" />
+    <link rel="stylesheet" href="http://opencolorado.org/ckan/theme/css/opencolorado.css" />
+    <link rel="stylesheet" href="http://opencolorado.org/wordpress/wp-content/themes/the-advent/css/superfish-opencolorado-style.css" />
     </head>
+    
+    <header py:match="header">
+    <div class="inner">
+    <ul class="sf-menu" id="menu-main"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item"><a href="/">Data</a></li>
+    <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://opencolorado.org/category/data-apps/">Apps</a></li>
+    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="http://opencolorado.org/blog/">Blog</a></li>
+    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://opencolorado.org/get-involved/" title="Publish your data">Get Involved</a></li>
+    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://opencolorado.org/about/">About</a></li>
+    </ul>
+    ${select('*')}
+    </div>
+    </header>
+
   <xi:include href="layout_base.html" />
 </html>
