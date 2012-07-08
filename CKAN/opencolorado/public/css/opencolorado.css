@@ -120,6 +120,11 @@ header .menu a:hover
     color: #3D6A8C
 }
 
+header .menu.account 
+{
+    white-space:nowrap;
+}
+
 header .menu.account a 
 { 
     color: #ffffff;
@@ -143,9 +148,14 @@ header .menu.account .ckan-logged-in a
     background: url("../img/unlock_w.png") no-repeat scroll 4px 4px #D34141;
 }
 
-header .menu.account .ckan-logged-out a:last-child
+header .menu.account .ckan-logged-out a
 {
     display: none;
+}
+
+header .menu.account .ckan-logged-out a:first-child
+{
+    display: block;
 }
 
 header .menu.account .ckan-logged-in a:first-child
