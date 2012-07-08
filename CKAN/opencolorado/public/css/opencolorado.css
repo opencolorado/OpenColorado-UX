@@ -6,6 +6,17 @@ h1, h2, h3, h4, h5
     font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+h2
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
 /* page */
 body
 {
@@ -23,6 +34,16 @@ body #content
 
 .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
     width: 960px;
+}
+
+a, a:visited
+{
+    color: #008ee8;
+}
+
+a:hover
+{
+    color: #ec8526;
 }
 
 /* header */
