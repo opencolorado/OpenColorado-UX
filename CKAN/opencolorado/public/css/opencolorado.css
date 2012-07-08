@@ -74,7 +74,6 @@ header #site-name {
 {
     width: auto;
     background: #333333;
-    background: #D5E5F2;
     border-bottom: 2px solid #E1E1E1 !important;
     margin-bottom: 0px;
     position: relative;
@@ -107,7 +106,6 @@ header .menu #mainmenu {
 header .menu a 
 {
     color: #ffffff;
-    color: #1D83C6;
     display: inline-block;
     font-weight: normal;
     font-size: 13px;
@@ -230,14 +228,14 @@ input.search
     border-radius: 0px;
     margin: 0px;
     border-right:1px solid #cccccc;
+    background-image: -moz-linear-gradient(center top , #ffffff, #e6e6e6);
 }
 
 #minornavigation .nav > li.active > a
 {
     background: none repeat scroll 0 0 transparent;
     border: none;
-    background-color: #F0F0F0;
-    background-image: -moz-linear-gradient(center top , #ffffff, #D5E5F2);
+    background-color: #e6e6e6;
     border-right:1px solid #cccccc;
 }
 
