@@ -184,6 +184,55 @@ input.search
     font-weight: normal;
 }
 
+/* minor navigation */
+
+.dropdown-menu
+{
+    padding: 0px;
+}
+
+.dropdown-menu a {
+    color: #000000;
+    font-weight: normal;
+    margin-bottom: 2px;
+    padding: 5px 15px;
+}
+
+#minornavigation .divider
+{
+    display: none;
+}
+
+#minornavigation .nav 
+{
+    border-radius: 2px;
+    border: 1px solid #CCCCCC;
+    padding: 0px;
+    font-weight: normal;
+    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#minornavigation .nav-pills > li > a
+{
+    border: none;
+    border-radius: 0px;
+    margin: 0px;
+    border-right:1px solid #cccccc;
+}
+
+#minornavigation .nav > li.active > a
+{
+    background: none repeat scroll 0 0 transparent;
+    border: none;
+    background-color: #F0F0F0;
+    background-image: -moz-linear-gradient(center top , #ffffff, #D5E5F2);
+    border-right:1px solid #cccccc;
+}
+
+#minornavigation .nav > li > a:hover
+{
+    color: #1D83C6;
+}
 
 /* footer */
 .footer.outer 
@@ -247,14 +296,17 @@ body.index.home .front-page .action-box-inner input
 }
 
 body.index.home .front-page .action-box-inner.find {
+    background: url("../img/zoom.png") no-repeat scroll 0px 10px transparent;
     background: url("../img/gears.png") no-repeat scroll 0px 10px transparent;
 }
 
 body.index.home .front-page .action-box-inner.share {
+    background: url("../img/users.png") no-repeat scroll 0px 10px transparent;
     background: url("../img/gears.png") no-repeat scroll 0px 10px transparent;
 }
 
 body.index.home .front-page .action-box-inner.collaborate {
+    background: url("../img/documents.png") no-repeat scroll 0px 10px transparent;
     background: url("../img/gears.png") no-repeat scroll 0px 10px transparent;
 }
 
@@ -321,6 +373,11 @@ legend
     font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.markdown-editor
+{
+    border-radius: 3px;    
+}
+
 /* Sidebar */
 #sidebar .widget-list li.widget-container.boxed
 {
@@ -340,6 +397,11 @@ legend
 }
 
 /* footer */
+footer .row {
+    margin: 0 auto;
+    width: 960px;
+}
+
 footer #copyright {
     background: none repeat scroll 0 0 #333333;
     float: left;
