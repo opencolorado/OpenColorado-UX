@@ -3,7 +3,7 @@
 
 h1, h2, h3, h4, h5
 {
-    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Droid Sans",Helvetica,Arial,sans-serif;
 }
 
 h2
@@ -64,13 +64,24 @@ a:hover
 
 .header
 {
-    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Droid Sans",Helvetica,Arial,sans-serif;
     font-size: 14px;
+}
+
+header .active-marker
+{
+    position: absolute;
+    right: 279px;
+    bottom: 0px;
+    width: 50px;
+    height: 8px;
+    background: url("../img/active.png") no-repeat scroll 0px 0px transparent;
 }
 
 header .inner
 {
     width: 960px;
+    height: 56px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -252,7 +263,7 @@ input.search
     background: none;
     padding: 0px;
     font-weight: normal;
-    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Droid Sans",Helvetica,Arial,sans-serif;
     border-bottom: 1px solid #999999;
     border-radius:0px;
     filter:none;
@@ -353,7 +364,7 @@ body.index.home .front-page .action-box h1
     font-weight: bold;
     line-height: 30px;
     color: #333333;
-    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Droid Sans",Helvetica,Arial,sans-serif;
 }
 
 body.index.home .front-page .action-box-inner {
@@ -426,7 +437,7 @@ body.index.home .front-page .action-box-inner .create-button:hover
 label.control-label {
     font-size: 13px;
     font-weight: bold;
-    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Helvetica,Arial,sans-serif;
 }
 
 .form-horizontal .controls {
@@ -439,7 +450,7 @@ legend
     font-weight: bold;
     line-height: 30px;
     color: #333333;
-    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Droid Sans",Helvetica,Arial,sans-serif;
 }
 
 .markdown-editor

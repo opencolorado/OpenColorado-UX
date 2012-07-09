@@ -33,7 +33,7 @@
 {
     float: left;
     position: relative;
-    margin: 0 2px;
+    margin: 0px;
 }
 
 .sf-menu li.current-menu-item a
@@ -168,11 +168,11 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul
 .sf-menu, .sf-menu
 {
     float: right;
-    margin: 14px 0 0 4px;
+    margin: 14px 0 0;
 }
 .sf-menu a
 {
-    padding: .5em 0.7em;
+    padding: 7px 12px;
     display: block;
     float: left;
     color: #484848;
