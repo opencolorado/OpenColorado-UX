@@ -20,19 +20,139 @@
     <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://opencolorado.org/get-involved/" title="Publish your data">Get Involved</a></li>
     <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://opencolorado.org/about/">About</a></li>
     </ul>
-    ${select('*')}
+    
+    <div class="menu account">
+          <span class="ckan-logged-in" style="display: none;">
+            <a href="${h.url_for(controller='user',action='me')}">${h.gravatar((c.userobj.email_hash if c and c.userobj else ''),size=20)}${c.user}</a>
+            <a href="${h.url_for('/user/_logout')}">Logout</a>
+          </span>
+          <span class="ckan-logged-out">
+            <a href="${h.url_for(controller='user',action='login')}">Login</a>
+            <!--<a href="${h.url_for(controller='user',action='register')}">Register</a>-->
+          </span>
+        </div>
+        <a href="http://opencolorado.org">
+          <img width="275" height="45" src="${h.url_for_static(g.site_logo)}" alt="${g.site_title} Logo" title="${g.site_title} Logo" id="logo" />
+        </a>
+        <div id="site-name">
+          <a href="${h.url('home')}">${g.site_title} &mdash; ${g.site_description}</a>
+        </div>
+        <div class="menu">
+          <span id="menusearch">
+            <form action="${h.url(controller='package', action='search')}" method="GET">
+              <input name="q" value="${c.q if hasattr(c, 'q') else ''}" class="search" placeholder="${_('Find datasets')}" />
+            </form>
+          </span>
+          <div id="mainmenu">
+            ${h.nav_link(_('Home'), controller='home', action='index')}
+            ${h.nav_link(_('Search'), controller='package', action='search', highlight_actions = 'new index')}
+            ${h.nav_named_link(_('Groups'), name='%s_index' % h.default_group_type() )}
+            ${h.nav_link(_('Tags'), controller='tag', action='index')}
+            <a href="${h.url('stats')}">
+                  Statistics
+                </a>
+            <span py:if="h.check_access('package_create')">${h.nav_link(_('Add a dataset'), controller='package', action='new')}</span>
+          </div>
+        </div>
+
     </div>
     </header>
 
 
     <footer py:match="footer">
-    ${select('*')}
+
+    <div class="row">
+
+        <div class="span3">
+          <h3 class="widget-title">OpenColorado</h3>
+          <div class="textwidget">
+            <ul>
+              <li>
+                <a href="http://opencolorado.org">Home</a>
+              </li>
+              <li>
+                <a href="http://twitter.com/opencolorado">Twitter (@OpenColorado)</a>
+              </li>
+              <li>
+                <a href="http://github.com/opencolorado">Github</a>
+              </li>
+              <li>
+                <a href="https://groups.google.com/forum/?fromgroups#!forum/opencolorado">Google Group</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="span3">
+          <h3 class="widget-title">Sections</h3>
+          <div class="textwidget">
+            <ul>
+              <li>
+                <a href="${h.url(controller='group', action='index')}">
+                  Groups
+                </a>
+              </li>
+              <li>
+                <a href="${h.url(controller='user', action='index')}">
+                  Users
+                </a>
+              </li>
+              <li>
+                <a href="${h.url(controller='tag', action='index')}">
+                  Tags
+                </a>
+              </li>
+              <li py:if="'stats' in config.get('ckan.plugins','').split(' ')">
+                <a href="${h.url('stats')}">
+                  Statistics
+                </a>
+              </li>
+              <li>
+                <a href="${h.url(controller='revision', action='index')}">
+                  Revisions
+                </a>
+              </li>
+              <li>
+                <a href="${h.url_for('ckanadmin_index')}">
+                  Site Admin
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="span3">
+          <h3 class="widget-title">Languages</h3>
+          <div class="textwidget">
+            <ul>
+<?python
+current_url = request.environ['CKAN_CURRENT_URL']
+?>
+              <li py:for="locale in h.get_available_locales()">
+              <a href="${h.url(current_url, locale=str(locale))}">
+                  ${locale.display_name or locale.english_name}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="span3">
+          <h3 class="widget-title">Reference</h3>
+          <div class="textwidget">
+            <ul>
+                <li>${h.link_to(_('API'), h.url_for(controller='api', action='get_api', ver=2))}</li>
+                <li>${h.link_to(_('API Docs'), 'http://docs.ckan.org/en/latest/api.html')}</li>
+                <li>${h.link_to(_('Open Knowledge Foundation'), 'http://okfn.org/')}</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     
     <div class="clearfix" id="copyright">
     	<div class="wrap">
-				
     	<span class="alignleft">Except where otherwise noted, content on this site is<br/>licensed under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a></span>
-        <span class="alignright"><a href="http://opencolorado.org/contact/">Contact Us</a> | Powered by <a href="http://opencolorado.org/about/">OpenColorado</a> and <a href="http://www.ckan.org/">CKAN</a></span>
+        <span class="alignright"><a href="http://opencolorado.org/contact/">Contact Us</a> | Powered by <a href="http://opencolorado.org/about/">OpenColorado</a> and <a href="http://www.ckan.org/">CKAN</a> v${c.__version__}</span>
         </div>
     </div>
 

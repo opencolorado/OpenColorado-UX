@@ -17,6 +17,16 @@ h3 {
     font-weight: bold;
 }
 
+h3 a
+{
+    font-weight: normal;
+}
+
+ul.datasets li .header
+{
+    font-weight:normal;
+}
+
 /* page */
 body
 {
@@ -101,7 +111,8 @@ header #site-name {
     height: 90px;
     width: auto;
     box-shadow: none;
-    margin-bottom: 10px;   
+    margin-bottom: 10px;
+    filter: none; 
 }
 
 .header .account {
@@ -184,7 +195,7 @@ header .menu.account .ckan-logged-in a:first-child
     background: none;
     border: none;
     box-shadow: none;
-    color: #1D83C6;
+    color: #ffffff;
 }
 
 header .menu.account .ckan-logged-in a:first-child:hover
@@ -234,37 +245,67 @@ input.search
     display: none;
 }
 
+
 #minornavigation .nav 
 {
-    border-radius: 2px;
-    border: 1px solid #CCCCCC;
+    border:none;
+    background: none;
     padding: 0px;
     font-weight: normal;
     font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    border-bottom: 1px solid #999999;
+    border-radius:0px;
+    filter:none;
+}
+
+.nav-tabs > li, .nav-pills > li {
+    float: left;
+    margin-bottom: -1px;
+    line-height: normal;
 }
 
 #minornavigation .nav-pills > li > a
 {
     border: none;
-    border-radius: 0px;
+    border-radius: 4px 4px 0px 0px;
     margin: 0px;
-    border-right:1px solid #cccccc;
-    background-image: -moz-linear-gradient(center top , #ffffff, #e6e6e6);
+    border:1px solid transparent;
+    /*background-image: -moz-linear-gradient(center top , #ffffff, #e6e6e6);*/
+    background-color: transparent;
+    zoom: 1;
+    padding-left: 18px;
+    padding-right:18px;
+    height: auto;
 }
 
 #minornavigation .nav > li.active > a
 {
     background: none repeat scroll 0 0 transparent;
     border: none;
-    background-color: #e6e6e6;
-    border-right:1px solid #cccccc;
+    /*background-color: #e6e6e6;*/
+    border-left:1px solid #999999;
+    border-top:1px solid #999999;
+    border-right:1px solid #999999;
+    border-bottom:1px solid #ffffff;
 }
 
-#minornavigation .nav > li > a:hover
+#minornavigation .nav > li > a:hover, #minornavigation .nav > li.open > a
 {
-    color: #1D83C6;
+    background-color: #eeeeee;
+    border:1px solid transparent;
+    border-bottom:1px solid #999999;
+    color: #008EE8;
 }
 
+#minornavigation .nav > li.active > a:hover
+{
+    border-left:1px solid #999999;
+    border-top:1px solid #999999;
+    border-right:1px solid #999999;
+    border-bottom:1px solid #ffffff;
+    background-color: transparent;
+}
+    
 /* footer */
 .footer.outer 
 {
@@ -328,17 +369,14 @@ body.index.home .front-page .action-box-inner input
 
 body.index.home .front-page .action-box-inner.find {
     background: url("../img/zoom.png") no-repeat scroll 0px 10px transparent;
-    background: url("../img/gears.png") no-repeat scroll 0px 10px transparent;
 }
 
 body.index.home .front-page .action-box-inner.share {
     background: url("../img/users.png") no-repeat scroll 0px 10px transparent;
-    background: url("../img/gears.png") no-repeat scroll 0px 10px transparent;
 }
 
 body.index.home .front-page .action-box-inner.collaborate {
     background: url("../img/documents.png") no-repeat scroll 0px 10px transparent;
-    background: url("../img/gears.png") no-repeat scroll 0px 10px transparent;
 }
 
 body.index.home .front-page .action-box-inner .create-button
@@ -409,6 +447,23 @@ legend
     border-radius: 3px;    
 }
 
+.resource-panel
+{
+    border-radius: 4px;
+}
+
+.resource-panel .resource-panel-close {
+    right: 5px;
+    top: 5px;
+    font-weight: bold;
+    padding: 0 0 2px;
+}
+
+.resource-list li.active 
+{
+    border-radius: 4px 0px 0px 4px;
+}
+
 /* Sidebar */
 #sidebar .widget-list li.widget-container.boxed
 {
@@ -474,3 +529,4 @@ footer #copyright span a:hover {
     float: right;
     width: auto;
 }
+
