@@ -48,8 +48,8 @@
           <div class="action-box-inner tags clearfix">
           <h1>Popular Tags</h1>
             <div id="tagcloud">
-              <py:for each="tag_name, count in c.facets.get('tags', {}).items()">
-                <a rel="${count}" title="${count}" href="${h.url_for(controller='tag',action='read', id=tag_name)}">${tag_name}</a>
+              <py:for each="tag_name, count in c.facets.get('tags', { }).items()">
+                <a py:if="(count > 10 and tag_name != 'colorado')" rel="${count}" title="${count}" href="${h.url_for(controller='tag',action='read', id=tag_name)}">${tag_name}</a>
               </py:for>
             </div>
           </div>

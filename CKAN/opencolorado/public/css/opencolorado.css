@@ -62,6 +62,11 @@ a:hover
     font-size: 14px;
 }
 
+li
+{
+    line-height: 14px;
+}
+
 .header
 {
     font-family: "Droid Sans",Helvetica,Arial,sans-serif;
@@ -365,6 +370,8 @@ body.index.home .front-page .action-box h1
     line-height: 30px;
     color: #333333;
     font-family: "Droid Sans",Helvetica,Arial,sans-serif;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
 }
 
 body.index.home .front-page .action-box-inner {
@@ -431,6 +438,13 @@ body.index.home .front-page .action-box-inner .create-button:hover
     border-style: solid;
     border-width: 1px;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+#tagcloud a, #tagcloud a:hover
+{
+    font-weight: normal;
+    font-style:normal;
+    text-decoration: none;
 }
 
 /* Forms */
