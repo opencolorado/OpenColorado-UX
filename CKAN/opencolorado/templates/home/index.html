@@ -45,16 +45,13 @@
       </div>
       <div class="span4">
         <div class="action-box">
-          <div class="action-box-inner collaborate clearfix">
-          <h1>Collaborate</h1>
-
-          <p>Find out more about working with open data by exploring 
-          these resources:</p>
-          <ul>
-            <li><a href="http://getthedata.org">GetTheData.org</a></li>
-            <li><a href="http://datapatterns.org">DataPatterns.org</a></li>
-            <li><a href="http://opendatahandbook.org">Open Data Handbook</a></li>
-          </ul>
+          <div class="action-box-inner tags clearfix">
+          <h1>Popular Tags</h1>
+            <div id="tagcloud">
+              <py:for each="tag_name, count in c.facets.get('tags', {}).items()">
+                <a rel="${count}" title="${count}" href="${h.url_for(controller='tag',action='read', id=tag_name)}">${tag_name}</a>
+              </py:for>
+            </div>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@
 
 h1, h2, h3, h4, h5
 {
-    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Droid Sans",Helvetica,Arial,sans-serif;
 }
 
 h2
@@ -64,13 +64,24 @@ a:hover
 
 .header
 {
-    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Droid Sans",Helvetica,Arial,sans-serif;
     font-size: 14px;
+}
+
+header .active-marker
+{
+    position: absolute;
+    right: 279px;
+    bottom: 0px;
+    width: 50px;
+    height: 8px;
+    background: url("../img/active.png") no-repeat scroll 0px 0px transparent;
 }
 
 header .inner
 {
     width: 960px;
+    height: 56px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -162,22 +173,22 @@ header .menu.account a
     color: #ffffff;
     padding: 1px 9px 3px 24px;
 
-    box-shadow: 0 -20px 20px -8px rgba(0, 0, 0, 0.05) inset;
+    /*box-shadow: 0 -20px 20px -8px rgba(0, 0, 0, 0.05) inset;
     
     border: none;
-    border-radius: 4px 4px 4px 4px;
-    background: url("../img/lock_w.png") no-repeat scroll 4px 4px #66CC44;
+    border-radius: 4px 4px 4px 4px;*/
+    background: url("../img/lock_w.png") no-repeat scroll 4px 4px transparent;
 
 }
 
 header .menu.account a:hover
 {
-    box-shadow: 0 -20px 20px -10px rgba(255, 255, 255, 0.2) inset;
+    /*box-shadow: 0 -20px 20px -10px rgba(255, 255, 255, 0.2) inset;*/
 }
 
 header .menu.account .ckan-logged-in a
 {
-    background: url("../img/unlock_w.png") no-repeat scroll 4px 4px #D34141;
+    background: url("../img/unlock_w.png") no-repeat scroll 4px 4px transparent;
 }
 
 header .menu.account .ckan-logged-out a
@@ -252,7 +263,7 @@ input.search
     background: none;
     padding: 0px;
     font-weight: normal;
-    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Droid Sans",Helvetica,Arial,sans-serif;
     border-bottom: 1px solid #999999;
     border-radius:0px;
     filter:none;
@@ -353,7 +364,7 @@ body.index.home .front-page .action-box h1
     font-weight: bold;
     line-height: 30px;
     color: #333333;
-    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Droid Sans",Helvetica,Arial,sans-serif;
 }
 
 body.index.home .front-page .action-box-inner {
@@ -372,11 +383,11 @@ body.index.home .front-page .action-box-inner.find {
 }
 
 body.index.home .front-page .action-box-inner.share {
-    background: url("../img/users.png") no-repeat scroll 0px 10px transparent;
+    background: url("../img/documents.png") no-repeat scroll 0px 10px transparent;
 }
 
-body.index.home .front-page .action-box-inner.collaborate {
-    background: url("../img/documents.png") no-repeat scroll 0px 10px transparent;
+body.index.home .front-page .action-box-inner.tags {
+    background: url("../img/tag.png") no-repeat scroll 0px 10px transparent;
 }
 
 body.index.home .front-page .action-box-inner .create-button
@@ -426,7 +437,7 @@ body.index.home .front-page .action-box-inner .create-button:hover
 label.control-label {
     font-size: 13px;
     font-weight: bold;
-    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Helvetica,Arial,sans-serif;
 }
 
 .form-horizontal .controls {
@@ -439,7 +450,7 @@ legend
     font-weight: bold;
     line-height: 30px;
     color: #333333;
-    font-family: "Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Droid Sans",Helvetica,Arial,sans-serif;
 }
 
 .markdown-editor
@@ -530,3 +541,30 @@ footer #copyright span a:hover {
     width: auto;
 }
 
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html xmlns="http://www.w3.org/1999/xhtml" class="ie8 wp-toolbar"  dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if !(IE 8) ]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="wp-toolbar"  dir="ltr" lang="en-US">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>FileBrowser &lsaquo; OpenColorado &#8212; WordPress</title>
+<script type="text/javascript">
+addLoadEvent = function(func){if(typeof jQuery!="undefined")jQuery(document).ready(func);else if(typeof wpOnload!='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var userSettings = {
+		'url': '/wordpress/',
+		'uid': '7',
+		'time':'1342496392'
+	},
+	ajaxurl = '/wordpress/wp-admin/admin-ajax.php',
+	pagenow = 'tools_page_FileBrowser',
+	typenow = '',
+	adminpage = 'tools_page_FileBrowser',
+	thousandsSeparator = ',',
+	decimalPoint = '.',
+	isRtl = 0;
+</script>
+<link rel='stylesheet' href='http://opencolorado.org/wordpress/wp-admin/load-styles.php?c=1&amp;dir=ltr&amp;load=admin-bar,wp-admin&amp;ver=3.4' type='text/css' media='all' />
+<link rel='styl
