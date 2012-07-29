@@ -27,6 +27,10 @@ ul.datasets li .header
     font-weight:normal;
 }
 
+form {
+	margin: 0 0 12px;
+}
+
 /* page */
 body
 {
@@ -62,7 +66,7 @@ a:hover
     font-size: 14px;
 }
 
-li
+.sf-menu li
 {
     line-height: 14px;
 }
@@ -555,30 +559,75 @@ footer #copyright span a:hover {
     width: auto;
 }
 
-<!DOCTYPE html>
-<!--[if IE 8]>
-<html xmlns="http://www.w3.org/1999/xhtml" class="ie8 wp-toolbar"  dir="ltr" lang="en-US">
-<![endif]-->
-<!--[if !(IE 8) ]><!-->
-<html xmlns="http://www.w3.org/1999/xhtml" class="wp-toolbar"  dir="ltr" lang="en-US">
-<!--<![endif]-->
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>FileBrowser &lsaquo; OpenColorado &#8212; WordPress</title>
-<script type="text/javascript">
-addLoadEvent = function(func){if(typeof jQuery!="undefined")jQuery(document).ready(func);else if(typeof wpOnload!='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
-var userSettings = {
-		'url': '/wordpress/',
-		'uid': '7',
-		'time':'1342496392'
-	},
-	ajaxurl = '/wordpress/wp-admin/admin-ajax.php',
-	pagenow = 'tools_page_FileBrowser',
-	typenow = '',
-	adminpage = 'tools_page_FileBrowser',
-	thousandsSeparator = ',',
-	decimalPoint = '.',
-	isRtl = 0;
-</script>
-<link rel='stylesheet' href='http://opencolorado.org/wordpress/wp-admin/load-styles.php?c=1&amp;dir=ltr&amp;load=admin-bar,wp-admin&amp;ver=3.4' type='text/css' media='all' />
-<link rel='styl
+.group-badge
+{
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	position: relative;
+	margin: 10px 10px 35px 10px;
+	overflow: visible !important;
+	height: 60px;
+	
+	background: rgb(255,255,255); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-8 */
+}
+
+.package-count-box
+{
+	
+}
+
+.package-count
+{
+	line-height: 40px;
+	font-size: 44px;
+	font-weight: bold;
+	text-align: center;
+	padding-right: 30px;
+}
+
+.package-count-label a
+{
+	display: block;
+	text-align: center;
+	padding-right: 30px;
+}
+
+.group-badge-title
+{
+	font-family: "Droid Sans",Helvetica,Arial;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px 30px 10px 10px;
+	text-align: center;
+}
+
+.group-badge-title a
+{
+	color:#333;
+	text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
+}
+
+.group-badge-count
+{
+	position: absolute;
+	background: url("../img/badge.png") no-repeat scroll 0px 0px transparent;
+	width: 70px;
+	height: 70px;
+	top: -25px;
+	right: -25px;
+	line-height: 60px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	font-size: 19px;
+
+}
