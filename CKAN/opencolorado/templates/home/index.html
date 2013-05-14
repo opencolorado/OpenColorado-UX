@@ -62,7 +62,7 @@
       </div>
     </div>
     <div class="row">
-      <py:for each="i, group_dict in enumerate(c.groups[:6])">
+      <py:for each="i, group_dict in enumerate(c.groups[:12])">
         <div class="span4">
           <div class="group group-badge">
             <div class="group-badge-title"><a href="${h.url_for(controller='group', action='read', id=group_dict['name'])}">${group_dict['title']}</a></div>
