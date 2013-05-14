@@ -5,7 +5,7 @@
   py:strip="">
    <head py:match="head">
     ${select('*')}
-    <link rel="stylesheet" href="http://opencolorado.org/ckan/theme/css/opencolorado.css" />
+    <link rel="stylesheet" href="/css/opencolorado.css" />
     <link rel="stylesheet" href="http://opencolorado.org/wordpress/wp-content/themes/the-advent/css/superfish-opencolorado-style.css" />
     <!--[if lt IE 9]>
                  <script type="text/javascript" src="/scripts/vendor/html5shiv/html5.js"></script>
@@ -29,8 +29,8 @@
     <header py:match="header">
     <div class="inner">
     <ul class="sf-menu" id="menu-main"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item"><a href="/">Data</a></li>
-    <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://opencolorado.org/category/data-apps/">Apps</a></li>
     <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="http://opencolorado.org/blog/">Blog</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://opencolorado.org/citycamp-colorado/">CityCamp Colorado</a></li>
     <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://opencolorado.org/get-involved/" title="Publish your data">Get Involved</a></li>
     <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://opencolorado.org/about/">About</a></li>
     </ul>
@@ -63,7 +63,10 @@
             ${h.nav_link(_('Search'), controller='package', action='search', highlight_actions = 'new index')}
             ${h.nav_named_link(_('Groups'), name='%s_index' % h.default_group_type() )}
             ${h.nav_link(_('Tags'), controller='tag', action='index')}
-            <a href="${h.url('stats')}">
+            <a href="/apps">
+                  Apps/Ideas
+                </a>
+			<a href="${h.url('stats')}">
                   Statistics
                 </a>
             <span py:if="h.check_access('package_create')">${h.nav_link(_('Add a dataset'), controller='package', action='new')}</span>
